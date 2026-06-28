@@ -15,7 +15,7 @@ const links = {
   Resources: [
     { to: '/research', label: 'Research' },
     { to: '/verify-certificate', label: 'Verify Certificate' },
-    { to: '/portal', label: 'Student Portal' },
+    { to: '/portal', label: 'Academic Services' },
   ],
 };
 

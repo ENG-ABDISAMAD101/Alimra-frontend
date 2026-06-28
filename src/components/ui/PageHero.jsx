@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import Particles from './Particles';
 
-export default function PageHero({ title, subtitle, badge }) {
+export default function PageHero({ title, subtitle, badge, ctaText, ctaUrl }) {
   return (
     <section className="relative overflow-hidden pt-32 pb-20 hero-gradient">
       <Particles count={20} />
@@ -32,6 +32,19 @@ export default function PageHero({ title, subtitle, badge }) {
           >
             {subtitle}
           </motion.p>
+        )}
+        {ctaText && ctaUrl && (
+          <motion.a
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.35 }}
+            href={ctaUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-10 inline-flex rounded-full bg-aiu-green px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-aiu-green/20 hover:bg-aiu-green/90"
+          >
+            {ctaText}
+          </motion.a>
         )}
       </div>
     </section>

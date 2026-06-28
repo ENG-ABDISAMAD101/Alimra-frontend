@@ -136,7 +136,7 @@ export default function Navbar() {
             {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
           </button>
           <Button to="/portal" variant="gold" className="hidden sm:inline-flex !py-2 !px-4 text-xs">
-            Student Portal
+            Academic Services
           </Button>
           <button className="lg:hidden rounded-lg p-2 hover:bg-white/10" onClick={() => setOpen(!open)}>
             {open ? <X /> : <Menu />}
@@ -167,7 +167,7 @@ export default function Navbar() {
                     ]
               )}
               <Button to="/portal" variant="gold" className="mt-2 w-full">
-                Student Portal
+                Academic Services
               </Button>
             </div>
           </motion.div>
